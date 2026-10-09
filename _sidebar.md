@@ -2,6 +2,7 @@
 
 * **Getting Started**
   * [🚀 Prerequisites & Setup](getting-started.md)
+  * [📦 Maven Project Archetype](archetype.md)
   * [🏗️ Architecture & Modules](architecture.md)
 
 * **Development & Operations**

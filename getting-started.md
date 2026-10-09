@@ -99,3 +99,11 @@ mvn clean test
 ```
 
 If the build compiles and tests pass, your environment is ready to start development!
+
+---
+
+## 5. Next Steps
+
+* **[📦 Bootstrap a New Project with Maven Archetype](archetype.md)** — Create a customized APS project skeleton in seconds using `mvn archetype:generate`.
+* **[🏗️ Explore Project Architecture](architecture.md)** — Understand Maven reactor submodules and build lifecycle.
+* **[💻 Development & Extension Guide](development-guide.md)** — Write custom Java delegates, listeners, and REST endpoints.
