@@ -1,23 +1,29 @@
 # Maven Project Archetype
 
-The **APS Project Archetype** (`aps-project-archetype`) allows developers to bootstrap a brand new, fully configured Alfresco Process Services (APS) SDK project with a single Maven command.
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.alfresco-aps-sdk/aps-project-archetype.svg)](https://central.sonatype.com/artifact/io.github.alfresco-aps-sdk/aps-project-archetype)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+The **APS Project Archetype** (`aps-project-archetype`) is publicly available on **Maven Central**, allowing developers worldwide to bootstrap a brand new, fully configured Alfresco Process Services (APS) SDK project with a single Maven command.
 
 The archetype sets up a multi-module reactor project pre-configured for modern APS development, including Java extensions, Docker Compose orchestration, Apple Silicon (ARM64) support, and end-to-end integration tests.
 
+* **Maven Central**: [`io.github.alfresco-aps-sdk:aps-project-archetype`](https://central.sonatype.com/artifact/io.github.alfresco-aps-sdk/aps-project-archetype)
 * **GitHub Repository**: [`alfresco-aps-sdk/aps-project-archetype`](https://github.com/alfresco-aps-sdk/aps-project-archetype)
-* **Archetype Coordinates**: `org.alfresco.activiti:aps-project-archetype:3.1.3-SNAPSHOT`
+* **Archetype Coordinates**: `io.github.alfresco-aps-sdk:aps-project-archetype:3.1.3`
 
 ---
 
 ## 1. Quickstart: Generating a Project
 
+Because the archetype is hosted on **Maven Central**, Maven downloads it automatically without requiring any local installation or repository configuration.
+
 To bootstrap a new APS SDK project, open your terminal and run:
 
 ```bash
 mvn archetype:generate \
-  -DarchetypeGroupId=org.alfresco.activiti \
+  -DarchetypeGroupId=io.github.alfresco-aps-sdk \
   -DarchetypeArtifactId=aps-project-archetype \
-  -DarchetypeVersion=3.1.3-SNAPSHOT \
+  -DarchetypeVersion=3.1.3 \
   -DgroupId=com.example \
   -DartifactId=my-aps-project \
   -Dversion=1.0.0-SNAPSHOT \
@@ -29,9 +35,9 @@ mvn archetype:generate \
 
 | Parameter | Description | Example |
 | :--- | :--- | :--- |
-| `archetypeGroupId` | Archetype group ID | `org.alfresco.activiti` |
+| `archetypeGroupId` | Archetype group ID (Sonatype Central verified namespace) | `io.github.alfresco-aps-sdk` |
 | `archetypeArtifactId` | Archetype artifact ID | `aps-project-archetype` |
-| `archetypeVersion` | Version of the archetype | `3.1.3-SNAPSHOT` |
+| `archetypeVersion` | Version of the archetype (latest released version on Central) | `3.1.3` |
 | `groupId` | Your organization's Maven group ID | `com.mycompany.process` |
 | `artifactId` | Your new project folder and artifact name | `claim-process-solution` |
 | `version` | Initial project version | `1.0.0-SNAPSHOT` |
@@ -114,7 +120,7 @@ To stop the containers:
 
 ## 5. Installing the Archetype from Source
 
-If you want to build or customize the archetype locally:
+If you want to contribute to the archetype or test local development snapshots:
 
 ```bash
 git clone https://github.com/alfresco-aps-sdk/aps-project-archetype.git
@@ -122,4 +128,4 @@ cd aps-project-archetype
 mvn clean install
 ```
 
-This installs `aps-project-archetype` into your local `~/.m2/repository` catalog.
+This installs the latest development snapshot into your local `~/.m2/repository` cache.
