@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alfresco Process Services SDK (APS SDK) | Official Documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Official documentation and developer portal for the Alfresco Process Services SDK (APS SDK).">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="assets/avatar.jpg">
+  
+  <!-- Theme: Dark Theme with Cyan/Amber Cyber Accents -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css">
+  
+  <style>
+    :root {
+      --theme-color: #00e5ff;
+      --accent-color: #f59e0b;
+      --bg-dark: #0b1120;
+      --bg-sidebar: #070d19;
+      --border-color: rgba(0, 229, 255, 0.15);
+      --text-muted: #94a3b8;
+    }
+    
+    body {
+      background-color: var(--bg-dark) !important;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+
+    .sidebar {
+      background-color: var(--bg-sidebar) !important;
+      border-right: 1px solid var(--border-color) !important;
+    }
+
+    .sidebar .app-name-link img {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+      border: 1px solid rgba(0, 229, 255, 0.4);
+    }
+
+    .sidebar ul li a {
+      color: #cbd5e1 !important;
+      font-size: 14.5px;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar ul li.active > a,
+    .sidebar ul li a:hover {
+      color: var(--theme-color) !important;
+      font-weight: 600;
+      text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    }
+
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3 {
+      color: #f8fafc !important;
+      font-weight: 700;
+    }
+
+    .markdown-section h1 {
+      border-bottom: 2px solid rgba(0, 229, 255, 0.25);
+      padding-bottom: 12px;
+    }
+
+    .markdown-section a {
+      color: var(--theme-color) !important;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .markdown-section a:hover {
+      color: #38bdf8 !important;
+      text-decoration: underline;
+    }
+
+    .markdown-section code {
+      background: #1e293b !important;
+      color: #38bdf8 !important;
+      padding: 3px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .markdown-section pre[class*="language-"] {
+      background: #0f172a !important;
+      border: 1px solid rgba(0, 229, 255, 0.2);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .markdown-section table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 229, 255, 0.2);
+    }
+
+    .markdown-section th {
+      background: #1e293b !important;
+      color: #38bdf8;
+      font-weight: 600;
+      border: 1px solid rgba(0, 229, 255, 0.2) !important;
+      padding: 12px;
+    }
+
+    .markdown-section td {
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      padding: 10px 14px;
+      background: rgba(15, 23, 42, 0.5);
+    }
+
+    .markdown-section blockquote {
+      border-left: 4px solid var(--theme-color) !important;
+      background: rgba(0, 229, 255, 0.06);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 20px;
+      color: #cbd5e1;
+    }
+
+    /* Cover Page Customization */
+    section.cover {
+      background: radial-gradient(circle at 50% 30%, #0d1e38 0%, #070d19 100%) !important;
+    }
+
+    section.cover .cover-main img {
+      width: 180px;
+      height: 180px;
+      border-radius: 36px;
+      box-shadow: 0 0 40px rgba(0, 229, 255, 0.5);
+      border: 2px solid rgba(0, 229, 255, 0.5);
+      margin-bottom: 24px;
+    }
+
+    section.cover a.button {
+      background-color: var(--theme-color) !important;
+      color: #070d19 !important;
+      border-radius: 30px !important;
+      font-weight: 700 !important;
+      padding: 12px 28px !important;
+      border: none !important;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    section.cover a.button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(0, 229, 255, 0.7);
+    }
+
+    section.cover a.button:last-child {
+      background: transparent !important;
+      color: #ffffff !important;
+      border: 2px solid rgba(0, 229, 255, 0.5) !important;
+      box-shadow: none !important;
+    }
+
+    section.cover a.button:last-child:hover {
+      background: rgba(0, 229, 255, 0.15) !important;
+    }
+
+    /* Search Input Styling */
+    .search input {
+      background: #0f172a !important;
+      border: 1px solid rgba(0, 229, 255, 0.3) !important;
+      color: #ffffff !important;
+      border-radius: 8px !important;
+    }
+
+    .search input:focus {
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.4) !important;
+    }
+
+    /* GitHub Corner */
+    .github-corner svg {
+      fill: var(--theme-color) !important;
+      color: #070d19 !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading APS SDK Documentation...</div>
+  
+  <script>
+    window.$docsify = {
+      name: 'Alfresco Process Services SDK',
+      repo: 'https://github.com/alfresco-aps-sdk/alfresco-process-services-project-sdk',
+      logo: 'assets/logo.jpg',
+      loadSidebar: true,
+      loadNavbar: true,
+      coverpage: true,
+      onlyCover: false,
+      auto2top: true,
+      subMaxLevel: 3,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Search documentation...',
+        noData: 'No matching records found',
+        depth: 6
+      },
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied!'
+      },
+      pagination: {
+        previousText: 'Previous Page',
+        nextText: 'Next Page',
+        crossChapter: true
+      }
+    }
+  </script>
+  
+  <!-- Docsify Core -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  
+  <!-- Plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  
+  <!-- Prism Syntax Highlighting -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-xml-doc.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-docker.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-properties.min.js"></script>
+</body>
+</html>
