@@ -5,7 +5,7 @@
 [![Maven](https://img.shields.io/badge/Maven-3.9%2B-C71A36.svg?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
 [![Docker Multi-Arch](https://img.shields.io/badge/Docker-Multi--Arch%20(x86__64%20%7C%20ARM64)-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 [![APS Support](https://img.shields.io/badge/APS-24.x%20%7C%2025.x%20%7C%2026.x-009900.svg)](#/supported-versions)
-[![Enterprise Support](https://img.shields.io/badge/Enterprise%20Support-Zia%20Consulting-red.svg)](https://www.ziaconsulting.com)
+[![Enterprise Support](https://img.shields.io/badge/Enterprise%20Support-TAI%20Solutions-red.svg)](https://www.taisolutions.com/)
 
 The **Alfresco Process Services SDK (APS SDK)** is an enterprise development acceleration kit for building, extending, testing, and deploying custom solutions on **Alfresco Process Services (powered by Activiti)**.
 
@@ -63,4 +63,4 @@ Navigate through the developer guides to get started with the APS SDK:
 
 ## 💼 Enterprise Support
 
-This project is maintained as an open-source community effort. Enterprise maintenance, support, and consulting are provided by **Zia Consulting**.
+This project is maintained as an open-source community effort. Enterprise maintenance, support, and consulting are provided by [**TAI Solutions**](https://www.taisolutions.com/).
