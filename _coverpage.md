@@ -10,4 +10,5 @@
 - **Comprehensive Compatibility**: Support for APS 24.1.0 up to APS 26.2.0
 
 [Get Started](getting-started.md)
+[Maven Archetype](archetype.md)
 [GitHub Organization](https://github.com/alfresco-aps-sdk)

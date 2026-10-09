@@ -31,6 +31,9 @@ Navigate through the developer guides to get started with the APS SDK:
 * 🚀 **[Prerequisites & Setup](getting-started.md)**  
   System requirements, configuring Alfresco Nexus credentials in Maven `settings.xml`, and license files placement.
 
+* 📦 **[Maven Project Archetype](archetype.md)**  
+  Bootstrap a customized, production-ready APS project in seconds using `mvn archetype:generate`.
+
 * 🏗️ **[Architecture & Modules](architecture.md)**  
   Modular breakdown of `aps-extensions-jar`, `activiti-app-overlay-war`, `activiti-app-overlay-docker`, and `activiti-app-integration-tests`.
 
@@ -48,6 +51,26 @@ Navigate through the developer guides to get started with the APS SDK:
 
 * 📋 **[Supported APS Versions & Profiles](supported-versions.md)**  
   Compatibility matrix covering APS 24.1.0 through 26.2.0, dependency alignments, and Maven profile switching.
+
+---
+
+## ⚡ Quickstart: Bootstrap with Maven Archetype
+
+Create a complete APS project skeleton in seconds using the official **APS Project Archetype**:
+
+```bash
+mvn archetype:generate \
+  -DarchetypeGroupId=org.alfresco.activiti \
+  -DarchetypeArtifactId=aps-project-archetype \
+  -DarchetypeVersion=3.1.3-SNAPSHOT \
+  -DgroupId=com.example \
+  -DartifactId=my-aps-project \
+  -Dversion=1.0.0-SNAPSHOT \
+  -Dpackage=com.example.aps \
+  -DinteractiveMode=false
+```
+
+Learn more in the **[Archetype Guide](archetype.md)**.
 
 ---
 

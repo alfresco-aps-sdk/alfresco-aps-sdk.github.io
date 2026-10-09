@@ -1,6 +1,7 @@
 * Documentation
   * [Overview](README.md)
   * [Getting Started](getting-started.md)
+  * [Maven Archetype](archetype.md)
   * [Project Architecture](architecture.md)
   * [Development Guide](development-guide.md)
   * [Running & Deployment](running-and-deployment.md)
@@ -13,7 +14,8 @@
   * [Upgrading to 2.2.0 (< 2.0.8)](legacy-upgrade-2.2.0.md)
 
 * GitHub
-  * [Repository](https://github.com/alfresco-aps-sdk/alfresco-process-services-project-sdk)
+  * [SDK Repository](https://github.com/alfresco-aps-sdk/alfresco-process-services-project-sdk)
+  * [Archetype Repository](https://github.com/alfresco-aps-sdk/aps-project-archetype)
   * [Organization](https://github.com/alfresco-aps-sdk)
   * [Releases](https://github.com/alfresco-aps-sdk/alfresco-process-services-project-sdk/releases)
 
