@@ -12,6 +12,9 @@ The required JDK version depends on the target APS version specified in your bui
 * **APS versions <= 25.x**: OpenJDK **17**
 * **APS versions >= 26.x**: OpenJDK **21**
 
+> [!NOTE]
+> For legacy APS versions, the [`2.x` branch](https://github.com/alfresco-aps-sdk/alfresco-process-services-project-sdk/tree/2.x) supports OpenJDK 11 (and 17 for >= 2.4.x), and the [`master` branch](https://github.com/alfresco-aps-sdk/alfresco-process-services-project-sdk/tree/master) (APS 1.x) supports OpenJDK 8 / 11. Refer to the [Supported APS Versions](supported-versions.md) matrix for full details.
+
 Ensure your `JAVA_HOME` environment variable points to the corresponding JDK installation:
 ```bash
 java -version

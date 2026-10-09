@@ -7,7 +7,7 @@
 - **Native Multi-Architecture**: Apple Silicon (ARM64) & x86_64
 - **Multi-Container Stack**: APS, PostgreSQL, Elasticsearch & Activiti Admin
 - **Two-Tier Testing**: Embedded in-memory H2 tests & Swagger integration tests
-- **Comprehensive Compatibility**: Support for APS 24.1.0 up to APS 26.2.0
+- **Comprehensive Compatibility**: Support for APS 24.1.0 up to APS 26.2.0 (3.x branch) and legacy APS 1.x & 2.x (master & 2.x branches)
 
 [Get Started](getting-started.md)
 [Maven Archetype](archetype.md)

@@ -10,6 +10,7 @@
   * [Supported Versions](supported-versions.md)
 
 * Legacy
+  * [Supported APS 1.x & 2.x](supported-versions.md?id=legacy-aps-2x)
   * [License Management (< 2.0.9)](legacy-license-management.md)
   * [Upgrading to 2.2.0 (< 2.0.8)](legacy-upgrade-2.2.0.md)
 
